@@ -1,0 +1,16 @@
+title: SabayKit
+description: Privacy policy for the SabayKit Android app.
+url: https://chamroeun-chamrong.github.io
+baseurl: /saybitkit
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Repo-only files: not part of the published site.
+exclude:
+  - README.md
+  - provenance/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore

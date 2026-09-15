@@ -1,0 +1,129 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1c1f24;
+  --muted: #5c6470;
+  --rule: #e3e6ea;
+  --accent: #0f766e;
+  --code-bg: #f0f2f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171b;
+    --card: #1c2026;
+    --text: #e8eaed;
+    --muted: #a2aab5;
+    --rule: #2c323a;
+    --accent: #5eead4;
+    --code-bg: #23282f;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans",
+    "Noto Sans Khmer", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: var(--card);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1.75rem 1.75rem 2rem;
+  margin: 2rem 0 2.5rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h2, strong { font-weight: 650; }
+
+p > strong:only-child {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+a { color: var(--accent); }
+
+ul {
+  padding-left: 1.35rem;
+  margin: 0.6rem 0 1rem;
+}
+
+li { margin: 0.3rem 0; }
+
+li > strong { font-weight: 650; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.site-footer p { margin: 0; }
+
+@media (max-width: 34rem) {
+  body { font-size: 16px; }
+  .card { padding: 1.25rem 1.1rem 1.5rem; }
+  h1 { font-size: 1.45rem; }
+}

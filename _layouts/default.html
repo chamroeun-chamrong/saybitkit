@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <span class="brand">SabayKit</span>
+      <span class="brand-sub">{{ page.title | default: 'Privacy Policy' }}</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="card">
+      <h1>{{ page.title | default: 'Privacy Policy' }}</h1>
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        {{ site.title }} · Android app <code>com.sabaykit.app</code><br>
+        Contact: <a href="mailto:chamrong.info@gmail.com">chamrong.info@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

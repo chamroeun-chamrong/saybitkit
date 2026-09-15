@@ -1,0 +1,8 @@
+# Local Jekyll output, if the site is ever built on a machine
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+
+.DS_Store
