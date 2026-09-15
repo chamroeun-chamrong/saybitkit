@@ -6,6 +6,15 @@ baseurl: /saybitkit
 markdown: kramdown
 kramdown:
   input: GFM
+  # Render the policy byte-for-byte. kramdown's defaults replace straight quotes
+  # and apostrophes with typographic ones, which is prettier and wrong here:
+  # this text is quoted verbatim in the Play listing and the app, so a curl of
+  # the page has to match the source.
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  typographic_symbols:
+    ndash: "--"
+    mdash: "---"
+    hellip: "..."
 
 # Repo-only files: not part of the published site.
 exclude:
